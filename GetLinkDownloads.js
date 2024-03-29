@@ -1,3 +1,4 @@
+(()=>{
 document.querySelectorAll(".learn-outline-item").forEach((_, index) => {
   _.dataset.fileorder = `000${index}`.slice(-3);
 });
@@ -30,6 +31,7 @@ if (data.length > 0) {
   ).href;
   
 }
+})()
 function joinArray(obj) {
     arr = obj.sources.map(({src,res})=>([res,src]))
 data = [];
